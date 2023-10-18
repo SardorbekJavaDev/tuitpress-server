@@ -1,0 +1,35 @@
+
+### General example
+POST http://localhost:8080/api/v1/qrcode/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbHRva2FldkBnbWFpbC5jb20iLCJpYXQiOjE2ODUyNTY2MzcsImV4cCI6MTY4NTM0MzAzNywiaXNzIjoiVXNlZnVsIENvZGVzIHByb2R1Y3Rpb24ifQ.9O0MPc7MGDkSoIuC5ZMO1y0-HGz-7o8KaTb6Jg-4Evs
+
+{
+  "colorConfig": {
+    "bgColor": "#000000",
+    "eye1": {
+      "medium": "#000000",
+      "outer": "#ffffff",
+      "small": "#ffffff"
+    },
+    "eye2": {
+      "medium": "#000000",
+      "outer": "#ffffff",
+      "small": "#ffffff"
+    },
+    "eye3": {
+      "medium": "#000000",
+      "outer": "#ffffff",
+      "small": "#ffffff"
+    },
+    "pointColor": "#ffffff"
+  },
+  "data": "Assalomu Alaykum",
+  "extension": "png",
+  "height": 400,
+  "logoAttachId": "string",
+  "save": true,
+  "width": 400
+}
+
+
