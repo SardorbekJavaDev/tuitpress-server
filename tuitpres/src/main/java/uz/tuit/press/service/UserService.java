@@ -23,9 +23,7 @@ public class UserService {
     private final UserRepository userRepository;
 
     public UserDTO create(UserDTO dto) {
-        Optional<UserEntity> byEmail = userRepository.findByEmail(dto.getEmail());
-        if (byEmail.isPresent()) throw new EmailAlreadyExistsException("Email already has been taken !");
-
+        checkEmail(dto.getEmail());
         UserEntity entity = new UserEntity();
         entity.setName(dto.getName());
         entity.setSurname(dto.getSurname());
@@ -41,6 +39,11 @@ public class UserService {
         dto.setCreatedDate(saved.getCreatedDate());
         dto.setUpdatedDate(saved.getUpdatedDate());
         return dto;
+    }
+
+    private void checkEmail(String email) {
+        Optional<UserEntity> byEmail = userRepository.findByEmail(email);
+        if (byEmail.isPresent()) throw new EmailAlreadyExistsException("Email already has been taken !");
     }
 
     public PageImpl<UserDTO> paginationList(int page, int size) {
@@ -61,6 +64,7 @@ public class UserService {
         dto.setId(entity.getId());
         dto.setName(entity.getName());
         dto.setSurname(entity.getSurname());
+        dto.setEmail(entity.getEmail());
         dto.setStatus(entity.getStatus().toString());
         dto.setCreatedDate(entity.getCreatedDate());
         dto.setUpdatedDate(entity.getUpdatedDate());
@@ -68,8 +72,22 @@ public class UserService {
     }
 
 
-    public Object update(String id, UserDTO dto) {
-        return null;
+    public UserDTO update(String id, UserDTO dto) {
+        UserEntity entity = getUser(id);
+        checkEmail(dto.getEmail());
+
+        entity.setName(dto.getName());
+        entity.setSurname(dto.getSurname());
+        entity.setEmail(dto.getEmail());
+        String pswd = DigestUtils.md5Hex(dto.getPassword());
+        entity.setPassword(pswd);
+        UserEntity saved = userRepository.save(entity);
+
+        dto.setId(saved.getId());
+        dto.setStatus(saved.getStatus().toString());
+        dto.setCreatedDate(saved.getCreatedDate());
+        dto.setUpdatedDate(saved.getUpdatedDate());
+        return dto;
     }
 
     public Object delete(String id) {

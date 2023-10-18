@@ -15,34 +15,21 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/v1/user")
 @Api("User")
 public class UserController {
-    // *** only for admin
-    // Create user
-    // Change roll
-    // Get AdminLists
-    // ***
 
-    // Get active userLists
-    // Get block userLists
-    // Change user status (active/block)
-
-    // Filter  data, createdDate, size
-
-
-    @Autowired
+    @Autowired // tested
     private UserService userService;
-
     @PostMapping("/create")
     public ResponseEntity<?> createProfile(@RequestBody UserDTO dto) {
         return ResponseEntity.ok(userService.create(dto));
     }
 
-    @GetMapping("/")
+    @GetMapping("/") // tested
     public ResponseEntity<?> getProfileList(@RequestParam(value = "page", defaultValue = "0") int page,
                                             @RequestParam(value = "size", defaultValue = "5") int size) {
         return ResponseEntity.ok(userService.paginationList(page, size));
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/{id}") // tested
     public ResponseEntity<?> getProfileById(@PathVariable("id") String id) {
         return ResponseEntity.ok(userService.getById(id));
     }

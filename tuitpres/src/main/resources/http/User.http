@@ -20,3 +20,16 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkb3NzaUBnbWFpbC5jb20iLCJpY
 GET http://localhost:8090/api/v1/user/ac64c1aa-0aa3-40db-9c94-d26ef373f08a
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkb3NzaUBnbWFpbC5jb20iLCJpYXQiOjE2OTc2NDU0MzUsImV4cCI6MTY5NzczMTgzNSwiaXNzIjoiVXNlZnVsIENvZGVzIHByb2R1Y3Rpb24ifQ.bKshwRlaPD0lrRziouUC7LN_SuY6wBzWZNz1BDtzoG0
+
+
+###
+PUT http://localhost:8090/api/v1/user/update/ac64c1aa-0aa3-40db-9c94-d26ef373f08a
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkb3NzaUBnbWFpbC5jb20iLCJpYXQiOjE2OTc2NDU0MzUsImV4cCI6MTY5NzczMTgzNSwiaXNzIjoiVXNlZnVsIENvZGVzIHByb2R1Y3Rpb24ifQ.bKshwRlaPD0lrRziouUC7LN_SuY6wBzWZNz1BDtzoG0
+
+{
+  "name": "alijon update",
+  "surname": "Yorqulov",
+  "email":"alijonupdate@gmail.com",
+  "password":"123456"
+}
