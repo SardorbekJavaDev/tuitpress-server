@@ -1,0 +1,48 @@
+18 Oct 2023 - 15:46:35.218 - uz.tuit.press.TuitpresApplication -  INFO  - Starting TuitpresApplication using Java 17.0.8.1 on HP with PID 40884 (/home/mrjava/Documents/Programming/Hackaton/tuitpress-server/tuitpres/target/classes started by mrjava in /home/mrjava/Documents/Programming/Hackaton/tuitpress-server/tuitpres)
+18 Oct 2023 - 15:46:35.220 - uz.tuit.press.TuitpresApplication -  INFO  - The following 1 profile is active: "dev"
+18 Oct 2023 - 15:46:35.405 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18 Oct 2023 - 15:46:35.412 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+18 Oct 2023 - 15:46:35.545 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+18 Oct 2023 - 15:46:35.569 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.15.Final
+18 Oct 2023 - 15:46:35.623 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+18 Oct 2023 - 15:46:35.659 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+18 Oct 2023 - 15:46:35.786 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+18 Oct 2023 - 15:46:35.798 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+18 Oct 2023 - 15:46:35.903 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18 Oct 2023 - 15:46:35.908 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18 Oct 2023 - 15:46:35.992 - uz.tuit.press.TuitpresApplication -  INFO  - Started TuitpresApplication in 0.94 seconds (JVM running for 1.229)
+18 Oct 2023 - 15:46:35.995 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+18 Oct 2023 - 15:46:35.996 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+18 Oct 2023 - 15:46:36.016 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+18 Oct 2023 - 15:46:57.128 - uz.tuit.press.TuitpresApplication -  INFO  - Starting TuitpresApplication using Java 17.0.8.1 on HP with PID 41005 (/home/mrjava/Documents/Programming/Hackaton/tuitpress-server/tuitpres/target/classes started by mrjava in /home/mrjava/Documents/Programming/Hackaton/tuitpress-server/tuitpres)
+18 Oct 2023 - 15:46:57.130 - uz.tuit.press.TuitpresApplication -  INFO  - The following 1 profile is active: "dev"
+18 Oct 2023 - 15:46:57.349 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18 Oct 2023 - 15:46:57.355 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+18 Oct 2023 - 15:46:57.487 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+18 Oct 2023 - 15:46:57.513 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.15.Final
+18 Oct 2023 - 15:46:57.566 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+18 Oct 2023 - 15:46:57.601 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+18 Oct 2023 - 15:46:57.723 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+18 Oct 2023 - 15:46:57.734 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+18 Oct 2023 - 15:46:57.837 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18 Oct 2023 - 15:46:57.841 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18 Oct 2023 - 15:46:57.921 - uz.tuit.press.TuitpresApplication -  INFO  - Started TuitpresApplication in 1.017 seconds (JVM running for 1.286)
+18 Oct 2023 - 15:46:57.926 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+18 Oct 2023 - 15:46:57.928 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+18 Oct 2023 - 15:46:57.932 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+18 Oct 2023 - 15:47:13.195 - uz.tuit.press.TuitpresApplication -  INFO  - Starting TuitpresApplication using Java 17.0.8.1 on HP with PID 41121 (/home/mrjava/Documents/Programming/Hackaton/tuitpress-server/tuitpres/target/classes started by mrjava in /home/mrjava/Documents/Programming/Hackaton/tuitpress-server/tuitpres)
+18 Oct 2023 - 15:47:13.197 - uz.tuit.press.TuitpresApplication -  INFO  - The following 1 profile is active: "dev"
+18 Oct 2023 - 15:47:13.451 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18 Oct 2023 - 15:47:13.456 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 2 ms. Found 0 JPA repository interfaces.
+18 Oct 2023 - 15:47:13.594 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+18 Oct 2023 - 15:47:13.618 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.15.Final
+18 Oct 2023 - 15:47:13.676 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+18 Oct 2023 - 15:47:13.712 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+18 Oct 2023 - 15:47:13.834 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+18 Oct 2023 - 15:47:13.850 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+18 Oct 2023 - 15:47:13.959 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18 Oct 2023 - 15:47:13.966 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18 Oct 2023 - 15:47:14.054 - uz.tuit.press.TuitpresApplication -  INFO  - Started TuitpresApplication in 1.034 seconds (JVM running for 1.289)
+18 Oct 2023 - 15:47:14.057 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+18 Oct 2023 - 15:47:14.058 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+18 Oct 2023 - 15:47:14.066 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
