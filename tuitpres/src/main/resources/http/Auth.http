@@ -1,23 +1,23 @@
 ### Registration
 
-POST http://localhost:8080/api/v1/auth/registration
+POST http://localhost:8090/api/v1/auth/registration
 Content-Type: application/json
 
 {
-  "name":"Alisa",
+  "name":"TEST",
   "surname":"Tokaev",
-  "email":"altokaev@gmail.com",
+  "email":"test@gmail.com",
   "password":"123456"
 }
 
 ### Verification
-GET http://localhost:8080/api/v1/auth/verification/eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbHRva2FldkBnbWFpbC5jb20iLCJpYXQiOjE2ODUyNTUyNDcsImV4cCI6MTY4NTM0MTY0NywiaXNzIjoiVXNlZnVsIENvZGVzIHByb2R1Y3Rpb24ifQ.GlYnwPtpBn-LE__i0KrP0JmfioSf49oEAnDKTziZJUY
+GET http://localhost:8090/api/v1/auth/verification/eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGdtYWlsLmNvbSIsImlhdCI6MTY5NzY0MjM1NywiZXhwIjoxNjk3NzI4NzU3LCJpc3MiOiJVc2VmdWwgQ29kZXMgcHJvZHVjdGlvbiJ9.YIfKqyjgvOo_2N0NmmWQzNhYRhLU6FXNEGvkMISTsVY
 
 ### Login
-POST http://localhost:8080/api/v1/auth/login
+POST http://localhost:8090/api/v1/auth/login
 Content-Type: application/json
 
 {
-  "email":"altokaev@gmail.com",
+  "email":"dossi@gmail.com",
   "password":"123456"
 }

@@ -27,6 +27,6 @@ public class UserEntity extends BaseEntity {
     private UserRole role;
     @Column
     @Enumerated(EnumType.STRING)
-    private UserStatus status;
+    private UserStatus status = UserStatus.NOT_ACTIVE;
 
 }

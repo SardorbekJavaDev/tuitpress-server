@@ -1,9 +1,8 @@
 package uz.tuit.press.service;
 
-import uz.tuit.press.dto.RegistrationDTO;
 import uz.tuit.press.dto.UserJWTDTO;
 import uz.tuit.press.dto.request.AuthRequestDTO;
-import uz.tuit.press.dto.response.UserResponseDTO;
+import uz.tuit.press.dto.request.UserDTO;
 import uz.tuit.press.entity.UserEntity;
 import uz.tuit.press.enums.UserRole;
 import uz.tuit.press.enums.UserStatus;
@@ -32,7 +31,7 @@ public class AuthService {
     private final UserRepository userRepository;
     private final AttachService attachService;
 
-    public UserResponseDTO login(AuthRequestDTO dto) {
+    public UserDTO login(AuthRequestDTO dto) {
         String pswd = DigestUtils.md5Hex(dto.getPassword());
 
         Optional<UserEntity> optional =
@@ -48,16 +47,16 @@ public class AuthService {
             throw new AppForbiddenException("Not Access !");
         }
 
-        UserResponseDTO profile = new UserResponseDTO();
+        UserDTO profile = new UserDTO();
         profile.setName(entity.getName());
         profile.setSurname(entity.getSurname());
         profile.setEmail(entity.getEmail());
-        profile.setPassword(dto.getPassword()); // TODO: 23.06.2022 Decode password
+//        profile.setPassword(dto.getPassword()); // TODO: 23.06.2022 Decode password
         profile.setJwt(JwtUtil.encode(entity.getEmail()));
         return profile;
     }
 
-    public String registration(RegistrationDTO dto) {
+    public String registration(UserDTO dto) {
         Optional<UserEntity> optional = userRepository.findByEmail(dto.getEmail());
         if (optional.isPresent()) {
             throw new EmailAlreadyExistsException("Email Already Exits");
@@ -78,7 +77,7 @@ public class AuthService {
         StringBuilder builder = new StringBuilder();
         String jwt = JwtUtil.encode(entity.getEmail());
         builder.append(verificationUrl).append(jwt);
-        return "Activate Your Registration " + builder;  // we used activation via 'response'
+        return "Activate Your Registration " + builder;  //TODO xuddi shuni emailga yubor
     }
 
 

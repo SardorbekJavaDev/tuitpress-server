@@ -8,13 +8,13 @@ import lombok.ToString;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
 @ToString
 @JsonInclude(JsonInclude.Include.NON_NULL)
-
-public class UserRequestDTO {
+public class UserDTO {
     @NotBlank
     @Size(max = 15, min = 3, message = "Name not valid")
     private String name;
@@ -28,4 +28,11 @@ public class UserRequestDTO {
     @Size(max = 12, min = 4, message = "Password not valid")
     private String password;
 
+    // + for response
+
+    private String id;
+    private String status;
+    private LocalDateTime updatedDate;
+    private LocalDateTime createdDate;
+    private String jwt;
 }

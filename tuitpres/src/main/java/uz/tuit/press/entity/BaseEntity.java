@@ -17,12 +17,12 @@ public class BaseEntity {
 
     @Id
     @GeneratedValue(generator = "UUID")
-    @GenericGenerator(name = "UUID",strategy = "org.hibernate.id.UUIDGenerator")
-    @Column(updatable = false,nullable = false)
+    @GenericGenerator(name = "UUID", strategy = "org.hibernate.id.UUIDGenerator")
+    @Column(updatable = false, nullable = false)
     private String id;
 
     @Column
-    private Boolean visible;
+    private Boolean visible = true;
     @Column
     private LocalDateTime createdDate = LocalDateTime.now();
     @Column

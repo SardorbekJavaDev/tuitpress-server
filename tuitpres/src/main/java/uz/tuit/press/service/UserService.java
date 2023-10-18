@@ -1,32 +1,101 @@
 package uz.tuit.press.service;
 
-import uz.tuit.press.dto.request.UserRequestDTO;
-import uz.tuit.press.dto.response.UserResponseDTO;
+import lombok.RequiredArgsConstructor;
+import org.apache.commons.codec.digest.DigestUtils;
+import org.springframework.data.domain.*;
+import uz.tuit.press.dto.request.UserDTO;
 import org.springframework.stereotype.Service;
 import uz.tuit.press.entity.UserEntity;
+import uz.tuit.press.enums.UserRole;
+import uz.tuit.press.enums.UserStatus;
+import uz.tuit.press.exception.EmailAlreadyExistsException;
+import uz.tuit.press.exception.ItemNotFoundException;
+import uz.tuit.press.repository.UserRepository;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
 
 @Service
+@RequiredArgsConstructor
 public class UserService {
 
-    public UserResponseDTO create(UserRequestDTO dto) {
-        UserEntity userEntity = new UserEntity();
-        userEntity.setName(dto.getName());
+    private final UserRepository userRepository;
+
+    public UserDTO create(UserDTO dto) {
+        Optional<UserEntity> byEmail = userRepository.findByEmail(dto.getEmail());
+        if (byEmail.isPresent()) throw new EmailAlreadyExistsException("Email already has been taken !");
+
+        UserEntity entity = new UserEntity();
+        entity.setName(dto.getName());
+        entity.setSurname(dto.getSurname());
+        entity.setEmail(dto.getEmail());
+        String pswd = DigestUtils.md5Hex(dto.getPassword());
+        entity.setPassword(pswd);
+        entity.setRole(UserRole.USER);
+        entity.setStatus(UserStatus.ACTIVE);
+        UserEntity saved = userRepository.save(entity);
+
+        dto.setId(saved.getId());
+        dto.setStatus(saved.getStatus().toString());
+        dto.setCreatedDate(saved.getCreatedDate());
+        dto.setUpdatedDate(saved.getUpdatedDate());
+        return dto;
+    }
+
+    public PageImpl<UserDTO> paginationList(int page, int size) {
+        Pageable pageable = PageRequest.of(page, size, Sort.by(Sort.Direction.DESC, "createdDate"));
+
+        List<UserDTO> dtoList = new ArrayList<>();
+
+        Page<UserEntity> entityPage = userRepository.findAllByVisible(true, pageable);
+
+        entityPage.forEach(entity -> {
+            dtoList.add(toDTO(entity));
+        });
+        return new PageImpl<>(dtoList, pageable, entityPage.getTotalElements());
+    }
+
+    private UserDTO toDTO(UserEntity entity) {
+        UserDTO dto = new UserDTO();
+        dto.setId(entity.getId());
+        dto.setName(entity.getName());
+        dto.setSurname(entity.getSurname());
+        dto.setStatus(entity.getStatus().toString());
+        dto.setCreatedDate(entity.getCreatedDate());
+        dto.setUpdatedDate(entity.getUpdatedDate());
+        return dto;
+    }
+
+
+    public Object update(String id, UserDTO dto) {
         return null;
     }
 
-    public Object paginationList(int page, int size) {
+    public Object delete(String id) {
         return null;
     }
 
-    public Object getById(Integer id) {
-        return null;
+    public Boolean makeActive(String id) {
+        UserEntity currentUser = getUser(id);
+        currentUser.setStatus(UserStatus.ACTIVE);
+        userRepository.save(currentUser);
+        return true;
     }
 
-    public Object update(Integer id, UserRequestDTO dto) {
-        return null;
+    public Boolean makeBlock(String id) {
+        UserEntity currentUser = getUser(id);
+        currentUser.setStatus(UserStatus.ACTIVE);
+        userRepository.save(currentUser);
+        return true;
     }
 
-    public Object delete(Integer id) {
-        return null;
+    private UserEntity getUser(String id) {
+        return userRepository.findById(id).orElseThrow(() -> new ItemNotFoundException("User not found"));
     }
+
+    public UserDTO getById(String id) {
+        return toDTO(getUser(id));
+    }
+
 }

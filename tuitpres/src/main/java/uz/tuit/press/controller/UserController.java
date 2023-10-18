@@ -1,6 +1,6 @@
 package uz.tuit.press.controller;
 
-import uz.tuit.press.dto.request.UserRequestDTO;
+import uz.tuit.press.dto.request.UserDTO;
 import uz.tuit.press.service.UserService;
 import io.swagger.annotations.Api;
 import lombok.RequiredArgsConstructor;
@@ -32,7 +32,7 @@ public class UserController {
     private UserService userService;
 
     @PostMapping("/create")
-    public ResponseEntity<?> createProfile(@RequestBody UserRequestDTO dto) {
+    public ResponseEntity<?> createProfile(@RequestBody UserDTO dto) {
         return ResponseEntity.ok(userService.create(dto));
     }
 
@@ -43,18 +43,25 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<?> getProfileById(@PathVariable("id") Integer id) {
+    public ResponseEntity<?> getProfileById(@PathVariable("id") String id) {
         return ResponseEntity.ok(userService.getById(id));
     }
 
     @PutMapping("/update/{id}")
-    public ResponseEntity<?> updateStudent(@PathVariable("id") Integer id, @RequestBody UserRequestDTO dto) {
+    public ResponseEntity<?> updateStudent(@PathVariable("id") String id, @RequestBody UserDTO dto) {
         return ResponseEntity.ok(userService.update(id, dto));
     }
 
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<?> deleteStudent(@PathVariable("id") Integer id) {
+    public ResponseEntity<?> deleteStudent(@PathVariable("id") String id) {
         return ResponseEntity.ok(userService.delete(id));
+    }
+
+//    *********************************
+
+    @PutMapping("/activate/{id}")
+    public ResponseEntity<?> makeActive(@PathVariable("id") String id) {
+        return ResponseEntity.ok(userService.makeActive(id));
     }
 
 

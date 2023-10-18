@@ -1,7 +1,7 @@
 package uz.tuit.press.controller;
 
-import uz.tuit.press.dto.RegistrationDTO;
 import uz.tuit.press.dto.request.AuthRequestDTO;
+import uz.tuit.press.dto.request.UserDTO;
 import uz.tuit.press.service.AuthService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -29,7 +29,7 @@ public class AuthController {
 
     @ApiOperation(value = "user registration", notes = "Method used for user Registration")
     @PostMapping("/registration")
-    public ResponseEntity<?> registration(@RequestBody @Valid RegistrationDTO dto) {
+    public ResponseEntity<?> registration(@RequestBody @Valid UserDTO dto) {
         log.info("Registration: {}{}", dto, AuthService.class);
         return ResponseEntity.ok(authService.registration(dto));
     }

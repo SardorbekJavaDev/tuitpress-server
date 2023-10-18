@@ -1,35 +1,22 @@
-
-### General example
-POST http://localhost:8080/api/v1/qrcode/
+###
+POST http://localhost:8090/api/v1/user/create
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhbHRva2FldkBnbWFpbC5jb20iLCJpYXQiOjE2ODUyNTY2MzcsImV4cCI6MTY4NTM0MzAzNywiaXNzIjoiVXNlZnVsIENvZGVzIHByb2R1Y3Rpb24ifQ.9O0MPc7MGDkSoIuC5ZMO1y0-HGz-7o8KaTb6Jg-4Evs
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGdtYWlsLmNvbSIsImlhdCI6MTY5NzY0MjQ0MCwiZXhwIjoxNjk3NzI4ODQwLCJpc3MiOiJVc2VmdWwgQ29kZXMgcHJvZHVjdGlvbiJ9.zXd8bs1Xn7fzlGDbku2OCbtWbtfTvXtJPqEYK0Ac1cc
 
 {
-  "colorConfig": {
-    "bgColor": "#000000",
-    "eye1": {
-      "medium": "#000000",
-      "outer": "#ffffff",
-      "small": "#ffffff"
-    },
-    "eye2": {
-      "medium": "#000000",
-      "outer": "#ffffff",
-      "small": "#ffffff"
-    },
-    "eye3": {
-      "medium": "#000000",
-      "outer": "#ffffff",
-      "small": "#ffffff"
-    },
-    "pointColor": "#ffffff"
-  },
-  "data": "Assalomu Alaykum",
-  "extension": "png",
-  "height": 400,
-  "logoAttachId": "string",
-  "save": true,
-  "width": 400
+  "name":"dossi",
+  "surname":"Yorqulov",
+  "email":"dossi@gmail.com",
+  "password":"123456"
 }
 
+###
+GET http://localhost:8090/api/v1/user/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkb3NzaUBnbWFpbC5jb20iLCJpYXQiOjE2OTc2NDU0MzUsImV4cCI6MTY5NzczMTgzNSwiaXNzIjoiVXNlZnVsIENvZGVzIHByb2R1Y3Rpb24ifQ.bKshwRlaPD0lrRziouUC7LN_SuY6wBzWZNz1BDtzoG0
 
+
+###
+GET http://localhost:8090/api/v1/user/ac64c1aa-0aa3-40db-9c94-d26ef373f08a
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkb3NzaUBnbWFpbC5jb20iLCJpYXQiOjE2OTc2NDU0MzUsImV4cCI6MTY5NzczMTgzNSwiaXNzIjoiVXNlZnVsIENvZGVzIHByb2R1Y3Rpb24ifQ.bKshwRlaPD0lrRziouUC7LN_SuY6wBzWZNz1BDtzoG0
