@@ -90,23 +90,23 @@ public class UserService {
         return dto;
     }
 
-    public Object delete(String id) {
-        return null;
+    public Boolean delete(String id) {
+        UserEntity user = getUser(id);
+        userRepository.delete(user);
+        return true;
     }
 
-    public Boolean makeActive(String id) {
+    public Boolean makeActive(String id, boolean isActive) {
         UserEntity currentUser = getUser(id);
-        currentUser.setStatus(UserStatus.ACTIVE);
+        if (isActive)
+            currentUser.setStatus(UserStatus.ACTIVE);
+        else
+            currentUser.setStatus(UserStatus.BLOCK);
+
         userRepository.save(currentUser);
         return true;
     }
 
-    public Boolean makeBlock(String id) {
-        UserEntity currentUser = getUser(id);
-        currentUser.setStatus(UserStatus.ACTIVE);
-        userRepository.save(currentUser);
-        return true;
-    }
 
     private UserEntity getUser(String id) {
         return userRepository.findById(id).orElseThrow(() -> new ItemNotFoundException("User not found"));

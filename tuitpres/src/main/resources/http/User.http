@@ -1,4 +1,4 @@
-###
+### CREATE
 POST http://localhost:8090/api/v1/user/create
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGdtYWlsLmNvbSIsImlhdCI6MTY5NzY0MjQ0MCwiZXhwIjoxNjk3NzI4ODQwLCJpc3MiOiJVc2VmdWwgQ29kZXMgcHJvZHVjdGlvbiJ9.zXd8bs1Xn7fzlGDbku2OCbtWbtfTvXtJPqEYK0Ac1cc
@@ -10,19 +10,19 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGdtYWlsLmNvbSIsImlhd
   "password":"123456"
 }
 
-###
+### GET LIST
 GET http://localhost:8090/api/v1/user/
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkb3NzaUBnbWFpbC5jb20iLCJpYXQiOjE2OTc2NDU0MzUsImV4cCI6MTY5NzczMTgzNSwiaXNzIjoiVXNlZnVsIENvZGVzIHByb2R1Y3Rpb24ifQ.bKshwRlaPD0lrRziouUC7LN_SuY6wBzWZNz1BDtzoG0
 
 
-###
-GET http://localhost:8090/api/v1/user/ac64c1aa-0aa3-40db-9c94-d26ef373f08a
+### GET
+GET http://localhost:8090/api/v1/user/811aa416-7716-451a-9936-0a5854b2d225
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkb3NzaUBnbWFpbC5jb20iLCJpYXQiOjE2OTc2NDU0MzUsImV4cCI6MTY5NzczMTgzNSwiaXNzIjoiVXNlZnVsIENvZGVzIHByb2R1Y3Rpb24ifQ.bKshwRlaPD0lrRziouUC7LN_SuY6wBzWZNz1BDtzoG0
 
 
-###
+### UPDATE
 PUT http://localhost:8090/api/v1/user/update/ac64c1aa-0aa3-40db-9c94-d26ef373f08a
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkb3NzaUBnbWFpbC5jb20iLCJpYXQiOjE2OTc2NDU0MzUsImV4cCI6MTY5NzczMTgzNSwiaXNzIjoiVXNlZnVsIENvZGVzIHByb2R1Y3Rpb24ifQ.bKshwRlaPD0lrRziouUC7LN_SuY6wBzWZNz1BDtzoG0
@@ -33,3 +33,9 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkb3NzaUBnbWFpbC5jb20iLCJpY
   "email":"alijonupdate@gmail.com",
   "password":"123456"
 }
+
+### DELETE
+DELETE http://localhost:8090/api/v1/user/delete/811aa416-7716-451a-9936-0a5854b2d225
+
+### MAKE ACTIVE
+PUT http://localhost:8090/api/v1/user/activate/811aa416-7716-451a-9936-0a5854b2d225

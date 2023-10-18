@@ -46,10 +46,14 @@ public class UserController {
 
 //    *********************************
 
-    @PutMapping("/activate/{id}")
+    @PutMapping("/active/{id}")
     public ResponseEntity<?> makeActive(@PathVariable("id") String id) {
-        return ResponseEntity.ok(userService.makeActive(id));
+        return ResponseEntity.ok(userService.makeActive(id, true));
     }
 
+    @PutMapping("/block/{id}")
+    public ResponseEntity<?> makeBlock(@PathVariable("id") String id) {
+        return ResponseEntity.ok(userService.makeActive(id, false));
+    }
 
 }
