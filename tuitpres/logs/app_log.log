@@ -46,3 +46,86 @@
 18 Oct 2023 - 15:47:14.057 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
 18 Oct 2023 - 15:47:14.058 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
 18 Oct 2023 - 15:47:14.066 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+18 Oct 2023 - 16:01:25.910 - uz.tuit.press.TuitpresApplication -  INFO  - Starting TuitpresApplication using Java 17.0.8.1 on HP with PID 42704 (/home/mrjava/Documents/Programming/Hackaton/tuitpress-server/tuitpres/target/classes started by mrjava in /home/mrjava/Documents/Programming/Hackaton/tuitpress-server/tuitpres)
+18 Oct 2023 - 16:01:25.912 - uz.tuit.press.TuitpresApplication -  INFO  - The following 1 profile is active: "dev"
+18 Oct 2023 - 16:01:26.394 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18 Oct 2023 - 16:01:26.419 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+18 Oct 2023 - 16:01:26.677 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 9090 (http)
+18 Oct 2023 - 16:01:26.681 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+18 Oct 2023 - 16:01:26.682 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.80]
+18 Oct 2023 - 16:01:26.717 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+18 Oct 2023 - 16:01:26.718 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 736 ms
+18 Oct 2023 - 16:01:26.770 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+18 Oct 2023 - 16:01:26.787 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.15.Final
+18 Oct 2023 - 16:01:26.847 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+18 Oct 2023 - 16:01:26.890 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+18 Oct 2023 - 16:01:27.023 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+18 Oct 2023 - 16:01:27.035 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+18 Oct 2023 - 16:01:27.353 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18 Oct 2023 - 16:01:27.359 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18 Oct 2023 - 16:01:27.533 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18 Oct 2023 - 16:01:27.818 - o.s.s.web.DefaultSecurityFilterChain -  INFO  - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@63e4bbf9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@455cb6d9, org.springframework.security.web.context.SecurityContextPersistenceFilter@14f254f, org.springframework.security.web.header.HeaderWriterFilter@1e9d6c78, org.springframework.web.filter.CorsFilter@6d7a343f, org.springframework.security.web.authentication.logout.LogoutFilter@58e0d1ac, uz.tuit.press.config.filter.JwtFilter@40ebb56, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4df54c1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6421bc7e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5d2bfc9f, org.springframework.security.web.session.SessionManagementFilter@7bf997e0, org.springframework.security.web.access.ExceptionTranslationFilter@4917992b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1d208795]
+18 Oct 2023 - 16:01:27.922 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 9090 (http) with context path ''
+18 Oct 2023 - 16:01:27.943 - uz.tuit.press.TuitpresApplication -  INFO  - Started TuitpresApplication in 2.327 seconds (JVM running for 2.617)
+18 Oct 2023 - 16:22:25.243 - uz.tuit.press.TuitpresApplication -  INFO  - Starting TuitpresApplication using Java 17.0.8.1 on HP with PID 45519 (/home/mrjava/Documents/Programming/Hackaton/tuitpress-server/tuitpres/target/classes started by mrjava in /home/mrjava/Documents/Programming/Hackaton/tuitpress-server/tuitpres)
+18 Oct 2023 - 16:22:25.244 - uz.tuit.press.TuitpresApplication -  INFO  - The following 1 profile is active: "dev"
+18 Oct 2023 - 16:22:25.673 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18 Oct 2023 - 16:22:25.694 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
+18 Oct 2023 - 16:22:25.941 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 9090 (http)
+18 Oct 2023 - 16:22:25.945 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+18 Oct 2023 - 16:22:25.945 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.80]
+18 Oct 2023 - 16:22:25.982 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+18 Oct 2023 - 16:22:25.983 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 704 ms
+18 Oct 2023 - 16:22:26.048 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+18 Oct 2023 - 16:22:26.070 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.15.Final
+18 Oct 2023 - 16:22:26.137 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+18 Oct 2023 - 16:22:26.205 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+18 Oct 2023 - 16:22:26.359 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+18 Oct 2023 - 16:22:26.371 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+18 Oct 2023 - 16:22:26.647 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18 Oct 2023 - 16:22:26.651 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18 Oct 2023 - 16:22:26.819 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18 Oct 2023 - 16:22:27.087 - o.s.s.web.DefaultSecurityFilterChain -  INFO  - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7364073b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50331591, org.springframework.security.web.context.SecurityContextPersistenceFilter@4fce655d, org.springframework.security.web.header.HeaderWriterFilter@9fd5dd0, org.springframework.web.filter.CorsFilter@5cfde2a4, org.springframework.security.web.authentication.logout.LogoutFilter@4fe9fb65, uz.tuit.press.config.filter.JwtFilter@5d32f5db, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@68908be7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@261b27db, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@53fb3e1b, org.springframework.security.web.session.SessionManagementFilter@49616310, org.springframework.security.web.access.ExceptionTranslationFilter@410e043b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@19b33b0d]
+18 Oct 2023 - 16:22:27.193 - o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -  WARN  - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 9090 is already in use
+18 Oct 2023 - 16:22:27.195 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Closing JPA EntityManagerFactory for persistence unit 'default'
+18 Oct 2023 - 16:22:27.196 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown initiated...
+18 Oct 2023 - 16:22:27.200 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Shutdown completed.
+18 Oct 2023 - 16:22:27.202 - o.a.catalina.core.StandardService -  INFO  - Stopping service [Tomcat]
+18 Oct 2023 - 16:22:27.211 - o.s.b.a.l.ConditionEvaluationReportLoggingListener -  INFO  - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+18 Oct 2023 - 16:22:27.218 - o.s.b.d.LoggingFailureAnalysisReporter -  ERROR - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 9090 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 9090 or configure this application to listen on another port.
+
+18 Oct 2023 - 16:22:43.684 - uz.tuit.press.TuitpresApplication -  INFO  - Starting TuitpresApplication using Java 17.0.8.1 on HP with PID 45646 (/home/mrjava/Documents/Programming/Hackaton/tuitpress-server/tuitpres/target/classes started by mrjava in /home/mrjava/Documents/Programming/Hackaton/tuitpress-server/tuitpres)
+18 Oct 2023 - 16:22:43.685 - uz.tuit.press.TuitpresApplication -  INFO  - The following 1 profile is active: "dev"
+18 Oct 2023 - 16:22:44.046 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+18 Oct 2023 - 16:22:44.067 - o.s.d.r.c.RepositoryConfigurationDelegate -  INFO  - Finished Spring Data repository scanning in 17 ms. Found 2 JPA repository interfaces.
+18 Oct 2023 - 16:22:44.326 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat initialized with port(s): 8090 (http)
+18 Oct 2023 - 16:22:44.329 - o.a.catalina.core.StandardService -  INFO  - Starting service [Tomcat]
+18 Oct 2023 - 16:22:44.330 - o.a.catalina.core.StandardEngine -  INFO  - Starting Servlet engine: [Apache Tomcat/9.0.80]
+18 Oct 2023 - 16:22:44.363 - o.a.c.c.C.[Tomcat].[localhost].[/] -  INFO  - Initializing Spring embedded WebApplicationContext
+18 Oct 2023 - 16:22:44.363 - o.s.b.w.s.c.ServletWebServerApplicationContext -  INFO  - Root WebApplicationContext: initialization completed in 655 ms
+18 Oct 2023 - 16:22:44.413 - o.h.jpa.internal.util.LogHelper -  INFO  - HHH000204: Processing PersistenceUnitInfo [name: default]
+18 Oct 2023 - 16:22:44.428 - org.hibernate.Version -  INFO  - HHH000412: Hibernate ORM core version 5.6.15.Final
+18 Oct 2023 - 16:22:44.488 - o.h.annotations.common.Version -  INFO  - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+18 Oct 2023 - 16:22:44.528 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Starting...
+18 Oct 2023 - 16:22:44.652 - com.zaxxer.hikari.HikariDataSource -  INFO  - HikariPool-1 - Start completed.
+18 Oct 2023 - 16:22:44.664 - org.hibernate.dialect.Dialect -  INFO  - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+18 Oct 2023 - 16:22:44.923 - o.h.e.t.j.p.i.JtaPlatformInitiator -  INFO  - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18 Oct 2023 - 16:22:44.930 - o.s.o.j.LocalContainerEntityManagerFactoryBean -  INFO  - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18 Oct 2023 - 16:22:45.108 - o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -  WARN  - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18 Oct 2023 - 16:22:45.352 - o.s.s.web.DefaultSecurityFilterChain -  INFO  - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@118f39f3, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7baf7e2c, org.springframework.security.web.context.SecurityContextPersistenceFilter@7c928399, org.springframework.security.web.header.HeaderWriterFilter@4a532271, org.springframework.web.filter.CorsFilter@73d7e7aa, org.springframework.security.web.authentication.logout.LogoutFilter@5ee76cf2, uz.tuit.press.config.filter.JwtFilter@d7c4fcb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@cef23a8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@a1689e8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@349686e8, org.springframework.security.web.session.SessionManagementFilter@87df88d, org.springframework.security.web.access.ExceptionTranslationFilter@18d63996, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@25d87313]
+18 Oct 2023 - 16:22:45.446 - o.s.b.w.e.tomcat.TomcatWebServer -  INFO  - Tomcat started on port(s): 8090 (http) with context path ''
+18 Oct 2023 - 16:22:45.464 - uz.tuit.press.TuitpresApplication -  INFO  - Started TuitpresApplication in 2.025 seconds (JVM running for 2.39)

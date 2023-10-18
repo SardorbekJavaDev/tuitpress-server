@@ -1,6 +1,6 @@
 package uz.tuit.press.config.details;
 
-import com.company.entity.UserEntity;
+import uz.tuit.press.entity.UserEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;

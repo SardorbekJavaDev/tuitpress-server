@@ -1,7 +1,7 @@
 package uz.tuit.press.config.details;
 
-import com.company.entity.UserEntity;
-import com.company.enums.UserStatus;
+import uz.tuit.press.entity.UserEntity;
+import uz.tuit.press.enums.UserStatus;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
