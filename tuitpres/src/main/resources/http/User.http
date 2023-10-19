@@ -1,25 +1,25 @@
 ### CREATE
 POST http://localhost:8090/api/v1/user/create
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGdtYWlsLmNvbSIsImlhdCI6MTY5NzY0MjQ0MCwiZXhwIjoxNjk3NzI4ODQwLCJpc3MiOiJVc2VmdWwgQ29kZXMgcHJvZHVjdGlvbiJ9.zXd8bs1Xn7fzlGDbku2OCbtWbtfTvXtJPqEYK0Ac1cc
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGdtYWlsLmNvbSIsImlhdCI6MTY5NzY4OTIyNywiZXhwIjoxNjk3Nzc1NjI3LCJpc3MiOiJVc2VmdWwgQ29kZXMgcHJvZHVjdGlvbiJ9.wT2eU2gUgXhQslG8o8tPf9NDgePE08tpD4nhW3CVLpQ
 
 {
-  "name":"dossi",
+  "name":"Sardorbek",
   "surname":"Yorqulov",
-  "email":"dossi@gmail.com",
+  "email":"sardor@gmail.com",
   "password":"123456"
 }
 
 ### GET LIST
 GET http://localhost:8090/api/v1/user/
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkb3NzaUBnbWFpbC5jb20iLCJpYXQiOjE2OTc2NDU0MzUsImV4cCI6MTY5NzczMTgzNSwiaXNzIjoiVXNlZnVsIENvZGVzIHByb2R1Y3Rpb24ifQ.bKshwRlaPD0lrRziouUC7LN_SuY6wBzWZNz1BDtzoG0
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGdtYWlsLmNvbSIsImlhdCI6MTY5NzY4OTIyNywiZXhwIjoxNjk3Nzc1NjI3LCJpc3MiOiJVc2VmdWwgQ29kZXMgcHJvZHVjdGlvbiJ9.wT2eU2gUgXhQslG8o8tPf9NDgePE08tpD4nhW3CVLpQ
 
 
 ### GET
 GET http://localhost:8090/api/v1/user/811aa416-7716-451a-9936-0a5854b2d225
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkb3NzaUBnbWFpbC5jb20iLCJpYXQiOjE2OTc2NDU0MzUsImV4cCI6MTY5NzczMTgzNSwiaXNzIjoiVXNlZnVsIENvZGVzIHByb2R1Y3Rpb24ifQ.bKshwRlaPD0lrRziouUC7LN_SuY6wBzWZNz1BDtzoG0
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGdtYWlsLmNvbSIsImlhdCI6MTY5NzY4OTIyNywiZXhwIjoxNjk3Nzc1NjI3LCJpc3MiOiJVc2VmdWwgQ29kZXMgcHJvZHVjdGlvbiJ9.wT2eU2gUgXhQslG8o8tPf9NDgePE08tpD4nhW3CVLpQ
 
 
 ### UPDATE

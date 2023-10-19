@@ -1,0 +1,41 @@
+### CREATE
+POST http://localhost:8090/api/v1/article/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGdtYWlsLmNvbSIsImlhdCI6MTY5NzY4OTQyNywiZXhwIjoxNjk3Nzc1ODI3LCJpc3MiOiJVc2VmdWwgQ29kZXMgcHJvZHVjdGlvbiJ9.PfXA5yY_1a4tJNReAFG4CHjmSqIvGlj8S_i62dwhQBE
+
+{
+  "title": "TATU SF da Samarqand kuni..",
+  "body": "The Comprehensive Guide To Cyber Security Assessments, The Comprehensive Guide To Cyber Security Assessments",
+  "favoritesCount": 10,
+  "tagList": ["#cybersecurity", "#ai"],
+  "description": "The Comprehensive Guide To Cyber Security Assessments"
+}
+
+### GET LIST
+GET http://localhost:8090/api/v1/article/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGdtYWlsLmNvbSIsImlhdCI6MTY5NzY4OTQyNywiZXhwIjoxNjk3Nzc1ODI3LCJpc3MiOiJVc2VmdWwgQ29kZXMgcHJvZHVjdGlvbiJ9.PfXA5yY_1a4tJNReAFG4CHjmSqIvGlj8S_i62dwhQBE
+
+### GET
+GET http://localhost:8090/api/v1/article/3f14838c-c764-4e1c-9a13-e556f92324bc
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGdtYWlsLmNvbSIsImlhdCI6MTY5NzY4OTQyNywiZXhwIjoxNjk3Nzc1ODI3LCJpc3MiOiJVc2VmdWwgQ29kZXMgcHJvZHVjdGlvbiJ9.PfXA5yY_1a4tJNReAFG4CHjmSqIvGlj8S_i62dwhQBE
+
+### UPDATE
+PUT http://localhost:8090/api/v1/article/update/3f14838c-c764-4e1c-9a13-e556f92324bc
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGdtYWlsLmNvbSIsImlhdCI6MTY5NzY4OTQyNywiZXhwIjoxNjk3Nzc1ODI3LCJpc3MiOiJVc2VmdWwgQ29kZXMgcHJvZHVjdGlvbiJ9.PfXA5yY_1a4tJNReAFG4CHjmSqIvGlj8S_i62dwhQBE
+
+{
+  "title": "TATU SF da Samarqand kuni..",
+  "body": "The Comprehensive Guide To Cyber Security Assessments, The Comprehensive Guide To Cyber Security Assessments",
+  "favoritesCount": 50,
+  "tagList": ["#cybersecurity", "#ai", "#news"],
+  "description": "The Comprehensive Guide To Cyber Security Assessments"
+}
+
+### DELETE
+DELETE http://localhost:8090/api/v1/article/delete/3f14838c-c764-4e1c-9a13-e556f92324bc
+
+### MAKE ACTIVE
+PUT http://localhost:8090/api/v1/article/activate/811aa416-7716-451a-9936-0a5854b2d225

@@ -11,22 +11,23 @@ import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Getter
 @Setter
 @ToString
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class ArticleDTO {
-    private String slug;
     private String title;
     private String body;
     private Integer favoritesCount;
-    private Integer tagList;
+    private List<String> tagList;
     private String description;
     private String photoId;
-    private String userId;
 
     private String id;
+    private String userId;
+    private String slug;
     private LocalDateTime createdDate = LocalDateTime.now();
     private LocalDateTime updatedDate;
 }

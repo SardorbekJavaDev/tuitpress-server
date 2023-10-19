@@ -4,6 +4,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import javax.validation.constraints.Max;
+import java.util.List;
 import java.util.UUID;
 
 @Entity
@@ -19,8 +21,9 @@ public class ArticleEntity extends BaseEntity {
     private String body;
     @Column
     private Integer favoritesCount;
-    @Column
-    private Integer tagList;
+
+    @ElementCollection
+    private List<String> tagList;
 
     @Column(columnDefinition = "text")
     private String description;

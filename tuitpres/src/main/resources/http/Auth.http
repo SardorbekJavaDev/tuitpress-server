@@ -4,20 +4,20 @@ POST http://localhost:8090/api/v1/auth/registration
 Content-Type: application/json
 
 {
-  "name":"TEST",
-  "surname":"Tokaev",
+  "name":"Testjon",
+  "surname":"Testov",
   "email":"test@gmail.com",
   "password":"123456"
 }
 
 ### Verification
-GET http://localhost:8090/api/v1/auth/verification/eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGdtYWlsLmNvbSIsImlhdCI6MTY5NzY0MjM1NywiZXhwIjoxNjk3NzI4NzU3LCJpc3MiOiJVc2VmdWwgQ29kZXMgcHJvZHVjdGlvbiJ9.YIfKqyjgvOo_2N0NmmWQzNhYRhLU6FXNEGvkMISTsVY
+GET http://localhost:8090/api/v1/auth/verification/eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0QGdtYWlsLmNvbSIsImlhdCI6MTY5NzY4OTE4NCwiZXhwIjoxNjk3Nzc1NTg0LCJpc3MiOiJVc2VmdWwgQ29kZXMgcHJvZHVjdGlvbiJ9.umnBr_5R06D2CIu9TVtHMjrK7AXN8TgQUmVrTZtlgJw
 
 ### Login
 POST http://localhost:8090/api/v1/auth/login
 Content-Type: application/json
 
 {
-  "email":"dossi@gmail.com",
+  "email":"test@gmail.com",
   "password":"123456"
 }
